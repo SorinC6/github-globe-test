@@ -10,7 +10,7 @@ const GlobeGl = () => {
   const [arcsData, setArcsData] = useState([]);
   const [startupsData, setStartupsData] = useState([]);
   const [contributors, setContributors] = useState([]);
-  const [hoverArc, setHoverArc] = useState();
+  const [hoverArc] = useState();
 
   const budapestCoord = { lat: 44.219123, lng: 28.6628 };
   const ukCoord = { lat: 51.373173, lng: -0.03596 };
@@ -129,6 +129,7 @@ const GlobeGl = () => {
     setStartupsData(startupsData);
     setContributors(constributorsData);
     globeEl.current.pointOfView(MAP_CENTER, 4000);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const getArcTooltip = (d) => `
