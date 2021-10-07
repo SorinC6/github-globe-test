@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Globe from 'react-globe.gl';
 
-const COUNTRY = 'Romania';
+// const COUNTRY = 'Romania';
 const MAP_CENTER = { lat: 51, lng: 0, altitude: 2 };
 const OPACITY = 0.9;
 
@@ -16,13 +16,12 @@ const GlobeGl = () => {
   const ukCoord = { lat: 51.373173, lng: -0.03596 };
   const ottawaCoord = { lat: 45.386636, lng: -75.573843 };
   const caracasCoord = { lat: 10.078389, lng: -66.710837 };
-  const missouriCoord = { lat: 10.078389, lng: -92.55716 };
+  // const missouriCoord = { lat: 10.078389, lng: -92.55716 };
   const stockholmCoord = { lat: 59.252807, lng: 18.248257 };
   const lisabonaCoord = { lat: 38.653444, lng: -9.102586 };
 
   useEffect(() => {
     // load data
-    const N = 20;
     const arcsData = [
       {
         startLat: budapestCoord.lat,
