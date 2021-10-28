@@ -5,7 +5,7 @@ import Globe from 'react-globe.gl';
 const MAP_CENTER = { lat: 51, lng: 0, altitude: 2 };
 const OPACITY = 0.9;
 
-const GlobeGl = () => {
+const GlobeGl = ({ imageSelected }) => {
   const globeEl = useRef();
   const [arcsData, setArcsData] = useState([]);
   const [startupsData, setStartupsData] = useState([]);
@@ -150,7 +150,7 @@ const GlobeGl = () => {
   return (
     <Globe
       ref={globeEl}
-      globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+      globeImageUrl={imageSelected}
       backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
       // dash config
       arcsData={arcsData}
