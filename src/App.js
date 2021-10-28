@@ -1,8 +1,6 @@
 import './App.css';
 import { useState } from 'react';
 import Globe from './component/Globe';
-import image1 from './component/image.png';
-import image2 from './component/image2.png';
 
 function App() {
   // console.log(window);
