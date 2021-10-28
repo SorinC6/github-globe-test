@@ -151,7 +151,7 @@ const GlobeGl = ({ imageSelected }) => {
     <Globe
       ref={globeEl}
       globeImageUrl={imageSelected}
-      backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
+      backgroundImageUrl=''
       // dash config
       arcsData={arcsData}
       arcLabel={getArcTooltip}
